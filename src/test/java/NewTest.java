@@ -27,10 +27,11 @@ public class NewTest {
 //
 //		}
 
-		Response response = get(ROOT_URI + "/api/users/2");
-////	Response response = get("https://api.chucknorris.io/jokes/random");
-		response.then().statusCode(200).body("data.email", equalTo("janet.weaver@reqres.in"));
+		Response response = get(ROOT_URI + "api/users/2");
+//	Response response = get("https://api.chucknorris.io/jokes/random");
+//		response.then().statusCode(200).body("value", equalTo("janet.weaver@reqres.in"));
 //		get(ROOT_URI + "/api/users/2").then().body("data.email", equalTo("janet.weaver@reqres.in"));
+		given().when().get(ROOT_URI + "api/users/2").then().body("data.email", equalTo("janet.weaver@reqres.in"));
 	}
 
 //
