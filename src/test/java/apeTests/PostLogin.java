@@ -20,7 +20,8 @@ public class PostLogin {
 		jsonObject.addProperty("email", email);
 		jsonObject.addProperty("password", password);
 		System.out.println(jsonObject.toString());
-		given().header("Content-Type","application/json").body(jsonObject.toString()).when().post(ROOT_URI + "api/login").then().statusCode(200).assertThat().body("token",
+		given().header("Content-Type","application/json").body(jsonObject.toString()).when()
+		.post(ROOT_URI + "api/login").then().statusCode(200).assertThat().body("token",
 				equalTo(expectedToken));
 
 	}
