@@ -1,16 +1,14 @@
+package apeTests;
 
 import static io.restassured.RestAssured.*;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import io.restassured.response.Response;
 
 import org.testng.annotations.AfterMethod;
 import static org.hamcrest.Matchers.equalTo;
 
-import java.io.IOException;
-import java.net.*;
 
 public class GETUser {
 

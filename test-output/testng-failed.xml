@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PostLogin">
+      <class name="apeTests.Delete">
         <methods>
-          <include name="token"/>
+          <include name="printCode"/>
         </methods>
-      </class> <!-- PostLogin -->
+      </class> <!-- apeTests.Delete -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
