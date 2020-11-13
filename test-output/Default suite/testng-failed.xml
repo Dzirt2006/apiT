@@ -5,7 +5,7 @@
     <classes>
       <class name="apeTests.PATCH">
         <methods>
-          <include name="token"/>
+          <include name="patch"/>
         </methods>
       </class> <!-- apeTests.PATCH -->
     </classes>
