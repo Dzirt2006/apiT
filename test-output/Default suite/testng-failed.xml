@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apeTests.Deserialize">
+      <class name="apeTests.CollectionDeserializing">
         <methods>
           <include name="deserialize"/>
         </methods>
-      </class> <!-- apeTests.Deserialize -->
+      </class> <!-- apeTests.CollectionDeserializing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
