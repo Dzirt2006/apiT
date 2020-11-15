@@ -1,8 +1,8 @@
 package apeTests;
 
 public class DeserializeUser {
-	private final String firstName;
-	private final String lastName;
+	private final String first_name;
+	private final String last_name;
 	private final String email;
 	private final String avatar;
 	private final String id;
@@ -11,15 +11,16 @@ public class DeserializeUser {
 		this.avatar = avatar;
 		this.id = id;
 		this.email = email;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.first_name = firstName;
+		this.last_name = lastName;
 	}
 
 	@Override
 	public String toString() {
-		return "id:" + id + " firstName:" + firstName + " lastName:" + lastName + " email:" + email + " avatar:"
+		return "id:" + id + " first_name:" + first_name + " last_name:" + last_name + " email:" + email + " avatar:"
 				+ avatar;
 	}
+	
 
 	public String getEmail() {
 		return email;

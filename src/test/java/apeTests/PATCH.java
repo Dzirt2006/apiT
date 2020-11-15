@@ -1,10 +1,6 @@
 package apeTests;
 
-import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import org.testng.annotations.Test;
 
