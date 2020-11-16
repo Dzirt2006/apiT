@@ -4,7 +4,7 @@
 <suite name="Suite1" verbose="1" >
   <test name="Unit1"   >
     <packages>
-      <package name="theInternet.tests" />
+      <package name="api.tests" />
    </packages>
  </test>
 </suite>
