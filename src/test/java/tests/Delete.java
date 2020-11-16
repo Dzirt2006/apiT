@@ -1,29 +1,31 @@
 package tests;
 
-import static io.restassured.RestAssured.given;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import io.restassured.response.Response;
+import APIData.DeleteDataProv;
 
-public class Delete {
 
-	final static String ROOT_URI = "https://reqres.in/";
-	String email = "eve.holt@reqres.in";
-	String password = "cityslicka";
-	String expectedToken = "QpwL5tke4Pnpja7X4";
+public class Delete extends APITestBase{
+
+	DeleteDataProv deleteData;
 
 	@Test
 	public void verifyCode() {
-		given().when().delete(ROOT_URI + "api/users/2").then().statusCode(204);
+		deleteData.reqAndVerifyDeleteCode();
 	}
 
 	@Test
 	public void getCode() {
-		Response response = given().delete(ROOT_URI + "api/users/2");
-		int actual = response.getStatusCode();
+		int actual = deleteData.reqAndGetDeleteCode();
 		Assert.assertEquals(actual, 204);
+	}
+	
+	@BeforeMethod
+	public void inst() {
+		deleteData=new DeleteDataProv(ROOT_URI);
 	}
 
 }
